@@ -2143,7 +2143,7 @@ export default class Client4 {
 
     doFetch = async (url, options) => {
         const {data} = await this.doFetchWithResponse(url, options);
-
+        console.log(data);  //eslint-disable-line no-console
         return data;
     };
 
